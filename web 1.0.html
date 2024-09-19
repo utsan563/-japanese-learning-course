@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Learning Course</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.75em;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+        .section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .resource {
+            background-color: #e8f4f8;
+            border-left: 5px solid #1e90ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h3 {
+            color: #1e90ff;
+        }
+        h4 {
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 5px;
+            color: #2c3e50;
+        }
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        audio {
+            display: none;
+        }
+        .phrase-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .phrase-table th, .phrase-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .phrase-table th {
+            background-color: #4A90E2;
+            color: white;
+            font-size: 18px;
+        }
+        .phrase-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .phrase-table tr:hover {
+            background-color: #ddd;
+        }
+        .example-section {
+            margin-top: 20px;
+        }
+        .example {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .example h4 {
+            margin: 0;
+            color: #333;
+        }
+        .example p {
+            margin: 5px 0;
+        }
+        .example p.jp {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .example p.en {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Japanese Learning Course</h1>
+    <h2>Created by UJWAL UPRETI</h2>
+
+    <!-- Table of Contents -->
+    <nav>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#kanji">Kanji Learning</a></li>
+            <li><a href="#phrases">日本語フレーズ150選</a></li>
+            <li><a href="#sentences">Japanese Sentences</a></li>
+            <li><a href="#practical">Japanese Practical Examples</a></li>
+            <li><a href="#resources">Learning Resources</a></li>
+            <li><a href="#tips">Study Tips</a></li>
+            <li><a href="#about">About the Creator</a></li>
+        </ul>
+    </nav>
+
+    <!-- Audio Element -->
+    <audio id="welcomeAudio" src="welcome.mp3" preload="auto"></audio>
+
+    <!-- JavaScript to Play Audio on Page Load -->
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('welcomeAudio');
+            audio.play().catch(function(error) {
+                console.log("Audio play failed: " + error);
+            });
+        });
+    </script>
+
+    <!-- Introduction Section -->
+    <div class="section" id="introduction">
+        <h3>Introduction</h3>
+        <p>Welcome to the Japanese Learning Course! This course is designed to help you get started with the basics of the Japanese language. Whether you're studying for the JLPT N5 exam or just want to learn some useful phrases, this course will guide you through essential vocabulary and grammar.</p>
+    </div>
+
+    <!-- Kanji Learning Section -->
+    <div class="section" id="kanji">
+        <h3>Kanji Learning</h3>
+        <p>Kanji are the characters used in Japanese writing that originate from Chinese characters. Learning kanji is essential for reading and writing in Japanese. Here are some basic kanji to get you started:</p>
+
+        <!-- Numbers -->
+        <h4>Numbers</h4>
+        <ul>
+            <li><strong>一</strong> (いち, one)</li>
+            <li><strong>二</strong> (に, two)</li>
+            <li><strong>三</strong> (さん, three)</li>
+            <li><strong>四</strong> (し/よん, four)</li>
+            <li><strong>五</strong> (ご, five)</li>
+            <li><strong>六</strong> (ろく, six)</li>
+            <li><strong>七</strong> (しち/なな, seven)</li>
+            <li><strong>八</strong> (はち, eight)</li>
+            <li><strong>九</strong> (きゅう/く, nine)</li>
+            <li><strong>十</strong> (じゅう, ten)</li>
+        </ul>
+
+        <!-- Days of the Week -->
+        <h4>Days of the Week</h4>
+        <ul>
+            <li><strong>日</strong> (にち/ひ, day/sun) - 日曜日 (にちようび, Sunday)</li>
+            <li><strong>月</strong> (げつ/つき, moon/month) - 月曜日 (げつようび, Monday)</li>
+            <li><strong>火</strong> (か/ひ, fire) - 火曜日 (かようび, Tuesday)</li>
+            <li><strong>水</strong> (すい/みず, water) - 水曜日 (すいようび, Wednesday)</li>
+            <li><strong>木</strong> (もく/き, tree) - 木曜日 (もくようび, Thursday)</li>
+            <li><strong>金</strong> (きん/かね, gold/money) - 金曜日 (きんようび, Friday)</li>
+            <li><strong>土</strong> (ど/つち, earth) - 土曜日 (どようび, Saturday)</li>
+        </ul>
+
+        <!-- Common Verbs -->
+        <h4>Common Verbs</h4>
+        <ul>
+            <li><strong>食</strong> (しょく/たべる, eat) - 食べる (たべる, to eat)</li>
+            <li><strong>飲</strong> (いん/のむ, drink) - 飲む (のむ, to drink)</li>
+            <li><strong>行</strong> (こう/いく, go) - 行く (いく, to go)</li>
+            <li><strong>見</strong> (けん/みる, see) - 見る (みる, to see/watch)</li>
+            <li><strong>来</strong> (らい/くる, come) - 来る (くる, to come)</li>
+            <li><strong>話</strong> (わ/はなす, speak) - 話す (はなす, to speak)</li>
+            <li><strong>書</strong> (しょ/かく, write) - 書く (かく, to write)</li>
+        </ul>
+    </div>
+
+    <!-- Japanese Phrases Section -->
+    <div class="section" id="phrases">
+        <h3>日本語フレーズ150選</h3>
+        <p>Here are 150 essential Japanese phrases to help you in everyday conversations:</p>
+        <table class="phrase-table">
+            <thead>
+                <tr>
+                    <th>Japanese Phrase</th>
+                    <th>Pronunciation</th>
+                    <th>English Translation</th>
+                </tr>
+            </thead>
+            <tbody>
+         <table border="1">
+    <tr>
+        <td>ありがとう</td>
+        <td>arigatou</td>
+        <td>Thank you</td>
+    </tr>
+    <tr>
+        <td>おはようございます</td>
+        <td>ohayou gozaimasu</td>
+        <td>Good morning</td>
+    </tr>
+    <tr>
+        <td>こんにちは</td>
+        <td>konnichiwa</td>
+        <td>Hello/Good afternoon</td>
+    </tr>
+    <tr>
+        <td>こんばんは</td>
+        <td>konbanwa</td>
+        <td>Good evening</td>
+    </tr>
+    <tr>
+        <td>おやすみなさい</td>
+        <td>oyasumi nasai</td>
+        <td>Good night</td>
+    </tr>
+    <tr>
+        <td>すみません</td>
+        <td>sumimasen</td>
+        <td>Excuse me</td>
+    </tr>
+    <tr>
+        <td>はい</td>
+        <td>hai</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>いいえ</td>
+        <td>iie</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>ごめんなさい</td>
+        <td>gomen nasai</td>
+        <td>I'm sorry</td>
+    </tr>
+    <tr>
+        <td>お願いします</td>
+        <td>onegai shimasu</td>
+        <td>Please</td>
+    </tr>
+    <tr>
+        <td>どういたしまして</td>
+        <td>dou itashimashite</td>
+        <td>You're welcome</td>
+    </tr>
+    <tr>
+        <td>お元気ですか？</td>
+        <td>ogenki desu ka?</td>
+        <td>How are you?</td>
+    </tr>
+    <tr>
+        <td>元気です</td>
+        <td>genki desu</td>
+        <td>I'm fine</td>
+    </tr>
+    <tr>
+        <td>いくらですか？</td>
+        <td>ikura desu ka?</td>
+        <td>How much is this?</td>
+    </tr>
+    <tr>
+        <td>これは何ですか？</td>
+        <td>kore wa nan desu ka?</td>
+        <td>What is this?</td>
+    </tr>
+    <tr>
+        <td>トイレはどこですか？</td>
+        <td>toire wa doko desu ka?</td>
+        <td>Where is the bathroom?</td>
+    </tr>
+    <tr>
+        <td>助けてください</td>
+        <td>tasukete kudasai</td>
+        <td>Please help me</td>
+    </tr>
+    <tr>
+        <td>はい、わかりました</td>
+        <td>hai, wakarimashita</td>
+        <td>Yes, I understand</td>
+    </tr>
+    <tr>
+        <td>いいえ、わかりません</td>
+        <td>iie, wakarimasen</td>
+        <td>No, I don't understand</td>
+    </tr>
+    <tr>
+        <td>どこから来ましたか？</td>
+        <td>doko kara kimashita ka?</td>
+        <td>Where are you from?</td>
+    </tr>
+    <tr>
+        <td>私はアメリカから来ました</td>
+        <td>watashi wa Amerika kara kimashita</td>
+        <td>I'm from America</td>
+    </tr>
+    <tr>
+        <td>お名前は何ですか？</td>
+        <td>onamae wa nan desu ka?</td>
+        <td>What is your name?</td>
+    </tr>
+    <tr>
+        <td>私の名前はジョンです</td>
+        <td>watashi no namae wa Jon desu</td>
+        <td>My name is John</td>
+    </tr>
+    <tr>
+        <td>おいしいです</td>
+        <td>oishii desu</td>
+        <td>It's delicious</td>
+    </tr>
+    <tr>
+        <td>お腹がすきました</td>
+        <td>onaka ga sukimashita</td>
+        <td>I'm hungry</td>
+    </tr>
+    <tr>
+        <td>お茶をください</td>
+        <td>ocha o kudasai</td>
+        <td>Please give me tea</td>
+    </tr>
+    <tr>
+        <td>これはいくらですか？</td>
+        <td>kore wa ikura desu ka?</td>
+        <td>How much is this?</td>
+    </tr>
+    <tr>
+        <td>ちょっと待ってください</td>
+        <td>chotto matte kudasai</td>
+        <td>Please wait a moment</td>
+    </tr>
+    <tr>
+        <td>すぐに戻ります</td>
+        <td>sugu ni modorimasu</td>
+        <td>I'll be right back</td>
+    </tr>
+    <tr>
+        <td>どうしましたか？</td>
+        <td>doushimashita ka?</td>
+        <td>What happened?</td>
+    </tr>
+    <tr>
+        <td>気をつけてください</td>
+        <td>ki o tsukete kudasai</td>
+        <td>Be careful</td>
+    </tr>
+    <tr>
+        <td>よい一日を</td>
+        <td>yoi ichinichi o</td>
+        <td>Have a nice day</td>
+    </tr>
+    <tr>
+        <td>すごいですね</td>
+        <td>sugoi desu ne</td>
+        <td>That's amazing</td>
+    </tr>
+    <tr>
+        <td>楽しいですね</td>
+        <td>tanoshii desu ne</td>
+        <td>It's fun, isn't it?</td>
+    </tr>
+    <tr>
+        <td>よくできました</td>
+        <td>yoku dekimashita</td>
+        <td>Well done</td>
+    </tr>
+    <tr>
+        <td>お疲れ様でした</td>
+        <td>otsukaresama deshita</td>
+        <td>Thank you for your hard work</td>
+    </tr>
+    <tr>
+        <td>気にしないでください</td>
+        <td>ki ni shinaide kudasai</td>
+        <td>Don't worry about it</td>
+    </tr>
+    <tr>
+        <td>良い夢を</td>
+        <td>yoi yume o</td>
+        <td>Sweet dreams</td>
+    </tr>
+    <tr>
+        <td>いってきます</td>
+        <td>ittekimasu</td>
+        <td>I'm leaving (used when going out)</td>
+    </tr>
+    <tr>
+        <td>いってらっしゃい</td>
+        <td>itterasshai</td>
+        <td>Take care (response to "ittekimasu")</td>
+    </tr>
+    <tr>
+        <td>ただいま</td>
+        <td>tadaima</td>
+        <td>I'm home (used when returning home)</td>
+    </tr>
+    <tr>
+        <td>お帰りなさい</td>
+        <td>okaerinasai</td>
+        <td>Welcome back (response to "tadaima")</td>
+    </tr>
+    <tr>
+        <td>お疲れ様でした</td>
+        <td>otsukaresama deshita</td>
+        <td>Thank you for your hard work</td>
+    </tr>
+    <tr>
+        <td>よろしくお願いします</td>
+        <td>yoroshiku onegai shimasu</td>
+        <td>Nice to meet you</td>
+    </tr>
+    <tr>
+        <td>どうぞ</td>
+        <td>douzo</td>
+        <td>Here you go/Please</td>
+    </tr>
+    <tr>
+        <td>お大事に</td>
+        <td>odaiji ni</td>
+        <td>Take care (when someone is ill)</td>
+    </tr>
+    <tr>
+        <td>さようなら</td>
+        <td>sayounara</td>
+        <td>Goodbye</td>
+    </tr>
+    <tr>
+        <td>おめでとうございます</td>
+        <td>omedetou gozaimasu</td>
+        <td>Congratulations</td>
+    </tr>
+    <tr>
+        <td>よく頑張りました</td>
+        <td>yoku ganbarimashita</td>
+        <td>You did well</td>
+    </tr>
+    <tr>
+        <td>すばらしい</td>
+        <td>subarashii</td>
+        <td>Wonderful</td>
+    </tr>
+    <tr>
+        <td>うれしい</td>
+        <td>ureshii</td>
+        <td>I'm happy</td>
+    </tr>
+    <tr>
+        <td>悲しい</td>
+        <td>kanashii</td>
+        <td>I'm sad</td>
+    </tr>
+    <tr>
+        <td>楽しい</td>
+        <td>tanoshii</td>
+        <td>Fun</td>
+    </tr>
+    <tr>
+        <td>難しい</td>
+        <td>muzukashii</td>
+        <td>Difficult</td>
+    </tr>
+    <tr>
+        <td>簡単です</td>
+        <td>kantan desu</td>
+        <td>It's easy</td>
+    </tr>
+    <tr>
+        <td>おいしい</td>
+        <td>oishii</td>
+        <td>Delicious</td>
+    </tr>
+    <tr>
+        <td>まずい</td>
+        <td>mazui</td>
+        <td>Not tasty</td>
+    </tr>
+    <tr>
+        <td>これ</td>
+        <td>kore</td>
+        <td>This</td>
+    </tr>
+    <tr>
+        <td>それ</td>
+        <td>sore</td>
+        <td>That</td>
+    </tr>
+    <tr>
+        <td>あれ</td>
+        <td>are</td>
+        <td>That over there</td>
+    </tr>
+    <tr>
+        <td>どれ</td>
+        <td>dore</td>
+        <td>Which one?</td>
+    </tr>
+    <tr>
+        <td>ここ</td>
+        <td>koko</td>
+        <td>Here</td>
+    </tr>
+    <tr>
+        <td>そこ</td>
+        <td>soko</td>
+        <td>There</td>
+    </tr>
+    <tr>
+        <td>あそこ</td>
+        <td>asoko</td>
+        <td>Over there</td>
+    </tr>
+    <tr>
+        <td>どこ</td>
+        <td>doko</td>
+        <td>Where?</td>
+    </tr>
+    <tr>
+        <td>いつ</td>
+        <td>itsu</td>
+        <td>When?</td>
+    </tr>
+    <tr>
+        <td>なぜ</td>
+        <td>naze</td>
+        <td>Why?</td>
+    </tr>
+    <tr>
+        <td>どうやって</td>
+        <td>dou yatte</td>
+        <td>How?</td>
+    </tr>
+    <tr>
+        <td>誰</td>
+        <td>dare</td>
+        <td>Who?</td>
+    </tr>
+    <tr>
+        <td>はい</td>
+        <td>hai</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>いいえ</td>
+        <td>iie</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>しんぱいしないでください</td>
+        <td>shinpai shinaide kudasai</td>
+        <td>Don't worry</td>
+    </tr>
+    <tr>
+        <td>ちょっと</td>
+        <td>chotto</td>
+        <td>A little</td>
+    </tr>
+    <tr>
+        <td>もう一度</td>
+        <td>mou ichido</td>
+        <td>One more time</td>
+    </tr>
+    <tr>
+        <td>もっと</td>
+        <td>motto</td>
+        <td>More</td>
+    </tr>
+    <tr>
+        <td>何時ですか？</td>
+        <td>nanji desu ka?</td>
+        <td>What time is it?</td>
+    </tr>
+    <tr>
+        <td>今は何時ですか？</td>
+        <td>ima wa nanji desu ka?</td>
+        <td>What time is it now?</td>
+    </tr>
+    <tr>
+        <td>今、いくつですか？</td>
+        <td>ima, ikutsu desu ka?</td>
+        <td>How old are you now?</td>
+    </tr>
+    <tr>
+        <td>何歳ですか？</td>
+        <td>nansai desu ka?</td>
+        <td>How old are you?</td>
+    </tr>
+    <tr>
+        <td>どうぞ、お座りください</td>
+        <td>douzo, osuwari kudasai</td>
+        <td>Please sit down</td>
+    </tr>
+    <tr>
+        <td>もう一度お願いします</td>
+        <td>mou ichido onegai shimasu</td>
+        <td>One more time, please</td>
+    </tr>
+    <tr>
+        <td>この辺りにレストランはありますか？</td>
+        <td>kono atari ni resutoran wa arimasu ka?</td>
+        <td>Is there a restaurant around here?</td>
+    </tr>
+    <tr>
+        <td>いらっしゃいませ</td>
+        <td>irasshaimase</td>
+        <td>Welcome (used in stores)</td>
+    </tr>
+    <tr>
+        <td>お会計をお願いします</td>
+        <td>okaikei o onegai shimasu</td>
+        <td>Check, please</td>
+    </tr>
+    <tr>
+        <td>クレジットカードは使えますか？</td>
+        <td>kurejitto kaado wa tsukaemasu ka?</td>
+        <td>Can I use a credit card?</td>
+    </tr>
+    <tr>
+        <td>おつりは要りません</td>
+        <td>otsuri wa irimasen</td>
+        <td>I don't need change</td>
+    </tr>
+    <tr>
+        <td>ここで食べますか？</td>
+        <td>koko de tabemasu ka?</td>
+        <td>Will you eat here?</td>
+    </tr>
+    <tr>
+        <td>持ち帰りにします</td>
+        <td>mochikaeri ni shimasu</td>
+        <td>I'll take it to go</td>
+    </tr>
+    <tr>
+        <td>予約はしていません</td>
+        <td>yoyaku wa shiteimasen</td>
+        <td>I don't have a reservation</td>
+    </tr>
+    <tr>
+        <td>予約を取りたいです</td>
+        <td>yoyaku o toritai desu</td>
+        <td>I want to make a reservation</td>
+    </tr>
+    <tr>
+        <td>一人です</td>
+        <td>hitori desu</td>
+        <td>For one person</td>
+    </tr>
+    <tr>
+        <td>二人です</td>
+        <td>futari desu</td>
+        <td>For two people</td>
+    </tr>
+    <tr>
+        <td>アレルギーがあります</td>
+        <td>arerugii ga arimasu</td>
+        <td>I have allergies</td>
+    </tr>
+    <tr>
+        <td>何か特別な注文はありますか？</td>
+        <td>nanika tokubetsu na chuumon wa arimasu ka?</td>
+        <td>Do you have any special requests?</td>
+    </tr>
+    <tr>
+        <td>メニューを見せてください</td>
+        <td>menyuu o misete kudasai</td>
+        <td>Please show me the menu</td>
+    </tr>
+    <tr>
+        <td>お勧めは何ですか？</td>
+        <td>osusume wa nan desu ka?</td>
+        <td>What do you recommend?</td>
+    </tr>
+    <tr>
+        <td>これをください</td>
+        <td>kore o kudasai</td>
+        <td>I’ll take this</td>
+    </tr>
+    <tr>
+        <td>写真を撮ってもいいですか？</td>
+        <td>shashin o tottemo ii desu ka?</td>
+        <td>Can I take a photo?</td>
+    </tr>
+    <tr>
+        <td>お水をもう一杯ください</td>
+        <td>omizu o mou ippai kudasai</td>
+        <td>One more glass of water, please</td>
+    </tr>
+    <tr>
+        <td>ここで待ちます</td>
+        <td>koko de machimasu</td>
+        <td>I'll wait here</td>
+    </tr>
+    <tr>
+        <td>すぐに戻ります</td>
+        <td>sugu ni modorimasu</td>
+        <td>I’ll be back soon</td>
+    </tr>
+    <tr>
+        <td>どの道を通ればいいですか？</td>
+        <td>dono michi o tooreba ii desu ka?</td>
+        <td>Which way should I go?</td>
+    </tr>
+    <tr>
+        <td>近くの駅はどこですか？</td>
+        <td>chikaku no eki wa doko desu ka?</td>
+        <td>Where is the nearest station?</td>
+    </tr>
+    <tr>
+        <td>タクシーを呼んでください</td>
+        <td>takushii o yonde kudasai</td>
+        <td>Please call a taxi</td>
+    </tr>
+    <tr>
+        <td>道に迷いました</td>
+        <td>michi ni mayoimashita</td>
+        <td>I’m lost</td>
+    </tr>
+    <tr>
+        <td>これで大丈夫です</td>
+        <td>kore de daijoubu desu</td>
+        <td>This is fine</td>
+    </tr>
+    <tr>
+        <td>困っています</td>
+        <td>komatteimasu</td>
+        <td>I’m in trouble</td>
+    </tr>
+    <tr>
+        <td>警察を呼んでください</td>
+        <td>keisatsu o yonde kudasai</td>
+        <td>Please call the police</td>
+    </tr>
+    <tr>
+        <td>病院はどこですか？</td>
+        <td>byouin wa doko desu ka?</td>
+        <td>Where is the hospital?</td>
+    </tr>
+    <tr>
+        <td>助けてくれてありがとう</td>
+        <td>tasukete kurete arigatou</td>
+        <td>Thank you for your help</td>
+    </tr>
+    <tr>
+        <td>急いでください</td>
+        <td>isoide kudasai</td>
+        <td>Please hurry</td>
+    </tr>
+    <tr>
+        <td>ここに泊まります</td>
+        <td>koko ni tomarimasu</td>
+        <td>I’ll stay here</td>
+    </tr>
+    <tr>
+        <td>部屋を予約しています</td>
+        <td>heya o yoyaku shiteimasu</td>
+        <td>I have a reservation</td>
+    </tr>
+    <tr>
+        <td>チェックインをお願いします</td>
+        <td>chekkuin o onegai shimasu</td>
+        <td>Check-in, please</td>
+    </tr>
+    <tr>
+        <td>チェックアウトをお願いします</td>
+        <td>chekkuauto o onegai shimasu</td>
+        <td>Check-out, please</td>
+    </tr>
+    <tr>
+        <td>ここで泊まります</td>
+        <td>koko de tomarimasu</td>
+        <td>I’ll stay here</td>
+    </tr>
+    <tr>
+        <td>一泊いくらですか？</td>
+        <td>ippaku ikura desu ka?</td>
+        <td>How much is one night?</td>
+    </tr>
+    <tr>
+        <td>部屋の鍵をください</td>
+        <td>heya no kagi o kudasai</td>
+        <td>Please give me the room key</td>
+    </tr>
+    <tr>
+        <td>インターネットは使えますか？</td>
+        <td>inta-netto wa tsukaemasu ka?</td>
+        <td>Can I use the internet?</td>
+    </tr>
+    <tr>
+        <td>お風呂はどこですか？</td>
+        <td>ofuro wa doko desu ka?</td>
+        <td>Where is the bath?</td>
+    </tr>
+    <tr>
+        <td>シャワーを使いたいです</td>
+        <td>shawaa o tsukaitai desu</td>
+        <td>I want to use the shower</td>
+    </tr>
+    <tr>
+        <td>すみません、部屋を掃除してください</td>
+        <td>sumimasen, heya o souji shite kudasai</td>
+        <td>Excuse me, please clean the room</td>
+    </tr>
+    <tr>
+        <td>ここに荷物を預けたいです</td>
+        <td>koko ni nimotsu o azuketai desu</td>
+        <td>I want to leave my luggage here</td>
+    </tr>
+    <tr>
+        <td>電源はどこですか？</td>
+        <td>den-gen wa doko desu ka?</td>
+        <td>Where is the power outlet?</td>
+    </tr>
+    <tr>
+        <td>コンセントはどこですか？</td>
+        <td>konsento wa doko desu ka?</td>
+        <td>Where is the electrical outlet?</td>
+    </tr>
+    <tr>
+        <td>タオルを貸してください</td>
+        <td>taoru o kashite kudasai</td>
+        <td>Please lend me a towel</td>
+    </tr>
+    <tr>
+        <td>バスルームに行きたいです</td>
+        <td>basuru-mu ni ikitai desu</td>
+        <td>I want to go to the bathroom</td>
+    </tr>
+    <tr>
+        <td>シーツを交換してください</td>
+        <td>shi-tsu o koukan shite kudasai</td>
+        <td>Please change the sheets</td>
+    </tr>
+    <tr>
+        <td>枕を追加してください</td>
+        <td>makura o tsuika shite kudasai</td>
+        <td>Please add an extra pillow</td>
+    </tr>
+    <tr>
+        <td>部屋にミニバーはありますか？</td>
+        <td>heya ni mini-ba wa arimasu ka?</td>
+        <td>Is there a minibar in the room?</td>
+    </tr>
+    <tr>
+        <td>冷蔵庫に飲み物がありますか？</td>
+        <td>reizouko ni nomimono ga arimasu ka?</td>
+        <td>Are there drinks in the refrigerator?</td>
+    </tr>
+    <tr>
+        <td>エアコンはどこですか？</td>
+        <td>eakon wa doko desu ka?</td>
+        <td>Where is the air conditioner?</td>
+    </tr>
+    <tr>
+        <td>エレベーターはどこですか？</td>
+        <td>erebe-ta- wa doko desu ka?</td>
+        <td>Where is the elevator?</td>
+    </tr>
+    <tr>
+        <td>階段はどこですか？</td>
+        <td>kaidan wa doko desu ka?</td>
+        <td>Where are the stairs?</td>
+    </tr>
+    <tr>
+        <td>どこで朝食を食べますか？</td>
+        <td>doko de choushoku o tabemasu ka?</td>
+        <td>Where do we have breakfast?</td>
+    </tr>
+    <tr>
+        <td>何時に朝食を取りますか？</td>
+        <td>nanji ni choushoku o torimasu ka?</td>
+        <td>What time is breakfast?</td>
+    </tr>
+    <tr>
+        <td>朝食はどこですか？</td>
+        <td>choushoku wa doko desu ka?</td>
+        <td>Where is breakfast?</td>
+    </tr>
+    <tr>
+        <td>ランチを食べに行きましょう</td>
+        <td>ranchi o tabe ni ikimashou</td>
+        <td>Let's go have lunch</td>
+    </tr>
+    <tr>
+        <td>夕食を一緒に食べませんか？</td>
+        <td>yuushoku o issho ni tabemasen ka?</td>
+        <td>Would you like to have dinner together?</td>
+    </tr>
+    <tr>
+        <td>お昼ご飯を一緒に食べませんか？</td>
+        <td>ohiru gohan o issho ni tabemasen ka?</td>
+        <td>Would you like to have lunch together?</td>
+    </tr>
+    <tr>
+        <td>今夜、どこに行きましょうか？</td>
+        <td>kon'ya, doko ni ikimashou ka?</td>
+        <td>Where shall we go tonight?</td>
+    </tr>
+    <tr>
+        <td>今日は何をしますか？</td>
+        <td>kyou wa nani o shimasu ka?</td>
+        <td>What are we doing today?</td>
+    </tr>
+    <tr>
+        <td>今日の予定は何ですか？</td>
+        <td>kyou no yotei wa nan desu ka?</td>
+        <td>What’s the plan for today?</td>
+    </tr>
+    <tr>
+        <td>楽しみにしています</td>
+        <td>tanoshimi ni shiteimasu</td>
+        <td>I’m looking forward to it</td>
+    </tr>
+    <tr>
+        <td>今日はどうだった？</td>
+        <td>kyou wa dou datta?</td>
+        <td>How was today?</td>
+    </tr>
+    <tr>
+        <td>今、何をしていますか？</td>
+        <td>ima, nani o shiteimasu ka?</td>
+        <td>What are you doing now?</td>
+    </tr>
+    <tr>
+        <td>昨日はどうでしたか？</td>
+        <td>kinou wa dou deshita ka?</td>
+        <td>How was yesterday?</td>
+    </tr>
+    <tr>
+        <td>いつ帰りますか？</td>
+        <td>itsu kaerimasu ka?</td>
+        <td>When are you going home?</td>
+    </tr>
+    <tr>
+        <td>今、どこにいますか？</td>
+        <td>ima, doko ni imasu ka?</td>
+        <td>Where are you now?</td>
+    </tr>
+    <tr>
+        <td>ここからどれくらいかかりますか？</td>
+        <td>koko kara dorekurai kakarimasu ka?</td>
+        <td>How long does it take from here?</td>
+    </tr>
+    <tr>
+        <td>この周辺には何がありますか？</td>
+        <td>kono shuuhen ni wa nani ga arimasu ka?</td>
+        <td>What is around here?</td>
+    </tr>
+    <tr>
+        <td>何か面白いところはありますか？</td>
+        <td>nanika omoshiroi tokoro wa arimasu ka?</td>
+        <td>Are there any interesting places?</td>
+    </tr>
+    <tr>
+        <td>見せてください</td>
+        <td>misete kudasai</td>
+        <td>Please show me</td>
+    </tr>
+    <tr>
+        <td>ちょっと待ってください</td>
+        <td>chotto matte kudasai</td>
+        <td>Please wait a moment</td>
+    </tr>
+    <tr>
+        <td>すぐに戻ります</td>
+        <td>sugu ni modorimasu</td>
+        <td>I’ll be back soon</td>
+    </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Japanese Sentences Section -->
+    <div class="section" id="sentences">
+        <h3>Japanese Sentences</h3>
+        <p>Here are some useful Japanese sentences for everyday use:</p>
+        <ul>
+            <li>お元気ですか？ (おげんきですか？) - How are you?</li>
+            <li>私は学生です。 (わたしはがくせいです。) - I am a student.</li>
+            <li>これは何ですか？ (これはなんですか？) - What is this?</li>
+            <li>どこに行きますか？ (どこにいきますか？) - Where are you going?</li>
+            <li>すみません、遅れました。 (すみません、おくれました。) - Sorry, I'm late.</li>
+            <li>助けてください！ (たすけてください！) - Please help me!</li>
+            <li>これはおいしいです。 (これはおいしいです。) - This is delicious.</li>
+            <li>どれくらいかかりますか？ (どれくらいかかりますか？) - How long will it take?</li>
+            <li>私は日本語を勉強しています。 (わたしはにほんごをべんきょうしています。) - I am studying Japanese.</li>
+            <li>お会いできてうれしいです。 (おあいできてうれしいです。) - Nice to meet you.</li>
+        </ul>
+    </div>
+
+    <!-- Japanese Practical Examples Section -->
+    <div class="section" id="practical">
+        <h3>Japanese Practical Examples</h3>
+        <p>Here are some practical examples with detailed explanations and translations:</p>
+
+        <!-- Example 1 -->
+        <div class="example">
+            <h4>Example 1: Introducing Yourself</h4>
+            <p class="jp">こんにちは、私の名前は[Your Name]です。よろしくお願いします。</p>
+            <p class="en">Hello, my name is [Your Name]. Nice to meet you.</p>
+            <p class="jp">Pronunciation: Konnichiwa, watashi no namae wa [Your Name] desu. Yoroshiku onegaishimasu.</p>
+            <p class="en">Explanation: Use this introduction when meeting someone for the first time. "よろしくお願いします" is a polite way to express "Nice to meet you" or "Please take care of me."</p>
+        </div>
+
+        <!-- Example 2 -->
+        <div class="example">
+            <h4>Example 2: Asking for Directions</h4>
+            <p class="jp">すみません、駅はどこですか？</p>
+            <p class="en">Excuse me, where is the train station?</p>
+            <p class="jp">Pronunciation: Sumimasen, eki wa doko desu ka?</p>
+            <p class="en">Explanation: Use this phrase when you need to ask for directions to a place. "すみません" is a polite way to get someone's attention.</p>
+        </div>
+
+        <!-- Example 3 -->
+        <div class="example">
+            <h4>Example 3: Ordering Food</h4>
+            <p class="jp">この料理は辛いですか？</p>
+            <p class="en">Is this dish spicy?</p>
+            <p class="jp">Pronunciation: Kono ryouri wa karai desu ka?</p>
+            <p class="en">Explanation: Use this question when you want to know if a dish is spicy before ordering it. "この料理" refers to "this dish" or "this food."</p>
+        </div>
+
+        <!-- Example 4 -->
+        <div class="example">
+            <h4>Example 4: Making a Request</h4>
+            <p class="jp">このレポートを明日までに提出してください。</p>
+            <p class="en">Please submit this report by tomorrow.</p>
+            <p class="jp">Pronunciation: Kono repōto o ashita made ni teishutsu shite kudasai.</p>
+            <p class="en">Explanation: Use this phrase to make a polite request for something to be done by a specific time. "提出してください" is a polite way to say "please submit."</p>
+        </div>
+
+        <!-- Example 5: Shopping for Clothes -->
+        <div class="example">
+            <h4>Example 5: Shopping for Clothes</h4>
+            <p class="jp">このシャツは試着できますか？</p>
+            <p class="en">Can I try on this shirt?</p>
+            <p class="jp">Pronunciation: Kono shatsu wa shichaku dekimasu ka?</p>
+            <p class="en">Explanation: Use this phrase when you want to try on clothes in a store. "試着" means "trying on" and "できますか" means "can I?"</p>
+        </div>
+
+        <!-- Example 6: Asking for the Price -->
+        <div class="example">
+            <h4>Example 6: Asking for the Price</h4>
+            <p class="jp">これの値段はいくらですか？</p>
+            <p class="en">How much is this?</p>
+            <p class="jp">Pronunciation: Kore no nedan wa ikura desu ka?</p>
+            <p class="en">Explanation: Use this phrase when you want to ask the price of an item. "値段" means "price" and "いくら" means "how much."</p>
+        </div>
+
+        <!-- Example 7: Making a Reservation -->
+        <div class="example">
+            <h4>Example 7: Making a Reservation</h4>
+            <p class="jp">テーブルを予約したいのですが。</p>
+            <p class="en">I would like to make a reservation for a table.</p>
+            <p class="jp">Pronunciation: Tēburu o yoyaku shitai no desu ga.</p>
+            <p class="en">Explanation: Use this phrase when you want to reserve a table at a restaurant. "予約" means "reservation" and "したい" means "want to do."</p>
+        </div>
+
+        <!-- Example 8: Asking for Help -->
+        <div class="example">
+            <h4>Example 8: Asking for Help</h4>
+            <p class="jp">手伝ってもらえますか？</p>
+            <p class="en">Can you help me?</p>
+            <p class="jp">Pronunciation: Tetsudatte moraemasu ka?</p>
+            <p class="en">Explanation: Use this phrase to ask someone for help. "手伝って" means "help" and "もらえますか" means "can you?"</p>
+        </div>
+    </div>
+
+    <!-- Learning Resources Section -->
+    <div class="section" id="resources">
+        <h3>Learning Resources</h3>
+        <p>Here are some additional resources to aid your Japanese language learning:</p>
+        <ul>
+            <li><a href="https://www.japanesepod101.com/" target="_blank">JapanesePod101</a> - A comprehensive resource for Japanese lessons and podcasts.</li>
+            <li><a href="https://www.tae-kim.net/" target="_blank">Tae Kim's Guide to Learning Japanese</a> - An excellent grammar guide.</li>
+            <li><a href="https://www.memrise.com/" target="_blank">Memrise</a> - A language learning app with Japanese courses.</li>
+            <li><a href="https://www.waniKani.com/" target="_blank">WaniKani</a> - A kanji learning tool using spaced repetition.</li>
+            <li><a href="https://www.nihongomaster.com/" target="_blank">Nihongo Master</a> - An online Japanese learning platform.</li>
+        </ul>
+    </div>
+
+    <!-- Study Tips Section -->
+    <div class="section" id="tips">
+        <h3>Study Tips</h3>
+        <ul>
+            <li>Practice regularly: Consistency is key to mastering Japanese.</li>
+            <li>Use flashcards: Tools like Anki can help with memorizing vocabulary.</li>
+            <li>Engage with native material: Watch Japanese TV shows, listen to Japanese music, and read Japanese books to immerse yourself in the language.</li>
+            <li>Join a language exchange: Practicing with native speakers can significantly improve your speaking skills.</li>
+            <li>Set achievable goals: Break down your learning into manageable chunks and celebrate your progress.</li>
+        </ul>
+    </div>
+
+    <!-- About the Creator Section -->
+    <div class="section" id="about">
+        <h3>About the Creator</h3>
+        <p>Hello, I’m UJWAL UPRETI. I created this course to help others learn Japanese effectively. I hope you find this resource helpful and enjoy your journey in learning Japanese!</p>
+    </div>
+</body>
+</html>
